@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LyricsApi", "LyricsApi\LyricsApi.csproj", "{85ABB904-C33C-4784-AD4F-DA1B9601EA5C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LyricsApi", "LyricsApi.csproj", "{85ABB904-C33C-4784-AD4F-DA1B9601EA5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
