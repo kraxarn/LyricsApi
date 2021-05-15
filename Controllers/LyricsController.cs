@@ -16,15 +16,15 @@ namespace LyricsApi.Controllers
 
 #if DEBUG
 		public async Task<LyricsResult> Get(string title, string artist) =>
-			await Put(new LyricsRequest
+			await Post(new LyricsRequest
 			{
 				Artist = artist,
 				Name = title
 			});
 #endif
 
-		[HttpPut]
-		public async Task<LyricsResult> Put(LyricsRequest request)
+		[HttpPost]
+		public async Task<LyricsResult> Post(LyricsRequest request)
 		{
 			if (request.IsEmpty())
 			{
