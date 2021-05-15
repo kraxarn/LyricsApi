@@ -48,7 +48,11 @@ namespace LyricsApi.Controllers
 					.InnerText.Trim()
 			};
 
-			cache[request.Url] = results;
+			if (results.IsValid)
+			{
+				cache[request.Url] = results;
+			}
+
 			return results;
 		}
 	}
