@@ -15,6 +15,7 @@ namespace LyricsApi.Controllers
 		private static HtmlWeb web = new();
 
 #if DEBUG
+		[Route("")]
 		public async Task<LyricsResult> Get(string title, string artist) =>
 			await Post(new LyricsRequest
 			{
@@ -24,7 +25,8 @@ namespace LyricsApi.Controllers
 #endif
 
 		[HttpPost]
-		public async Task<LyricsResult> Post(LyricsRequest request)
+		[Route("")]
+		public async Task<LyricsResult> Post([FromBody] LyricsRequest request)
 		{
 			if (request.IsEmpty())
 			{
